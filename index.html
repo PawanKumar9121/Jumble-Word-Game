@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jumble Word Game</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./words.js" defer></script>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+
+    <div class="container">
+
+        <h2 class="heading">Jumble Words Game</h2>
+        <div class="startArea" onclick="start()">
+          <button class="startBtn">Start</button>
+        </div>
+
+        <div class="content">
+            <p class="word"></p>
+            <input class="input" type="text" spellcheck="false" placeholder="Enter a valid word">
+            <div class="buttons">
+                <button class="refresh-word">Refresh Word</button>
+                <button class="check-word">Check Word</button>
+            </div>
+        </div>
+    </div>
+
+  <div id="myresult" class="result">
+    <div class="result-content">
+      <span class="close">&times;</span>
+      <p id="resultText"></p>
+    </div>
+  </div>
+
+    
+  </body>
+</html>
